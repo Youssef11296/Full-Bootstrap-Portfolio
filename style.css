@@ -1,0 +1,76 @@
+/* Vars */
+:root {
+  --light-color: #fff;
+  --dark-color: #222;
+  --norma-font-size: 1.2rem;
+}
+
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding-left: 30vw;
+}
+
+/* Intro Section */
+.intro {
+  width: 30vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url("img/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.intro .container {
+  height: 100%;
+}
+
+.intro .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.intro .content .text {
+  color: var(--light-color);
+}
+
+.intro p {
+  font-size: var(--norma-font-size);
+}
+
+/* Footer Section */
+.footer {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+/* Media Quiries */
+@media screen and (max-width: 800px) {
+  /* Body */
+  body {
+    padding-left: 0;
+  }
+  /* Intro Section */
+  .intro {
+    width: 100vw;
+    height: 38vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* Main Section */
+  .main {
+    margin: 40vh 0 0;
+  }
+}
