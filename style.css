@@ -15,7 +15,12 @@
 }
 
 body {
-  padding-left: 30vw;
+  padding: 0 0 0 30vw;
+  overflow-x: hidden;
+}
+
+.card {
+  cursor: pointer;
 }
 
 /* Intro Section */
@@ -68,9 +73,5 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  /* Main Section */
-  .main {
-    margin: 40vh 0 0;
   }
 }
